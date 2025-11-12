@@ -1,7 +1,6 @@
 baseURL: "https://davidkschwob.github.io/resume/"
 languageCode: en-us
 title: davidkschwobisagrump
-theme: "hextra"
 
 canonifyURLs: true
 
