@@ -36,10 +36,11 @@ jobs:
       - name: Build
         run: hugo -D --minify
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to davidkschwob.github.io/resume
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./public
+          force_orphan: true
 
