@@ -8,29 +8,3 @@ module:
   imports:
     - path: github.com/imfing/hextra
 
-params:
-  layout:
-    sidebar: left
-  sidebar:
-    enable: true
-    position: left
-    menu: main
-    autoCollapse: false
-    sticky: true
-  toc:
-    enable: false
-
-menu:
-  main:
-    - name: "Resume"
-      url: "/resume"
-      weight: 1
-      identifier: "resume"
-    - parent: "resume"
-      name: "About"
-      url: "/resume/about/"
-      weight: 1
-    - parent: "resume"
-      name: "Experience"
-      url: "/resume/experience"
-      weight: 2
