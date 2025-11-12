@@ -1,7 +1,30 @@
 baseURL: "https://davidkschwob.github.io/resume/"
 languageCode: en-us
-title: My New Hugo Site
+title: davidkschwobisagrump
+theme: "hextra"
+
+canonifyURLs: true
 
 module:
   imports:
     - path: github.com/imfing/hextra
+
+params:
+  sidebar:
+    enable: true
+    menu: main
+
+menu:
+  main:
+    - name: "Resume"
+      url: "/resume"
+      weight: 1
+      identifier: "resume"
+    - parent: "resume"
+      name: "About"
+      url: "/resume/about/"
+      weight: 1
+    - parent: "resume"
+      name: "Experience"
+      url: "/resume/experience"
+      weight: 2
