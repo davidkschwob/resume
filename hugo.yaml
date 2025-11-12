@@ -13,8 +13,9 @@ params:
     sidebar: left
   sidebar:
     enable: true
+    position: left
     menu: main
-    autoCollapse: flase
+    autoCollapse: false
     sticky: true
   toc:
     enable: false
