@@ -9,9 +9,15 @@ module:
     - path: github.com/imfing/hextra
 
 params:
+  layout:
+    sidebar: left
   sidebar:
     enable: true
     menu: main
+    autoCollapse: flase
+    sticky: true
+  toc:
+    enable: false
 
 menu:
   main:
