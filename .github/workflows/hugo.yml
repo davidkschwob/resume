@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "content/**"
+      - "config.*"
+      - "themes/**"
+      - "layouts/**"
+      - "static/**"
+      - ".github/workflows/**"
 
 permissions:
   contents: write
