@@ -1,0 +1,28 @@
+# Hugo configuration file
+title: davidkschwob
+BaseURL: "https://davidkschwob.github.io/resume"
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+menu:
+  main:
+    - name: About
+      pageRef: /docs/
+      weight: 10
+    - name: Search
+      weight: 20
+      params:
+        type: search
+    - name: GitHub
+      weight: 30
+      url: "https://github.com/davidkschwob"
+      params:
+        icon: github
+
+params:
+  sidebar: true
+  displayTitle: true
+
