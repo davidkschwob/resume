@@ -1,19 +1,22 @@
-name: Deploy Hugo Site with Hextra Module
+name: Publish davidkschwob.github.io/resume
 
 on:
   push:
     branches:
       - main
-    paths:
-      - "content/**"
-      - "config.*"
-      - "themes/**"
-      - "layouts/**"
-      - "static/**"
-      - ".github/workflows/**"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build-deploy:
